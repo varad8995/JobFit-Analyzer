@@ -34,3 +34,8 @@ It provides insights into **strengths**, **weaknesses**, and **suggestions for i
 ```bash
 git clone https://github.com/yourusername/resumealign.git
 cd resumealign
+
+
+###2️⃣ Create and activate a virtual environment
+```bash
+
