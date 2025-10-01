@@ -1,7 +1,6 @@
 # JobFit-Analyzer
-# 🧠 ResumeAlign
 
-**ResumeAlign** is an AI-powered Resume Analyzer that evaluates a candidate’s resume against a given job description.  
+**JobFit-Analyzer** is an AI-powered Resume Analyzer that evaluates a candidate’s resume against a given job description.  
 It provides insights into **strengths**, **weaknesses**, and **suggestions for improvement**, helping candidates align their profiles with specific job roles.
 
 ---
@@ -34,8 +33,25 @@ It provides insights into **strengths**, **weaknesses**, and **suggestions for i
 ```bash
 git clone https://github.com/yourusername/resumealign.git
 cd resumealign
+```
 
-
-###2️⃣ Create and activate a virtual environment
+### 2️⃣ Create and activate a virtual environment
 ```bash
+python3 -m venv venv
+source venv/bin/activate    # On Windows: venv\Scripts\activate
+```
+### 3️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
+### Start RQ Worker
+```bash
+rq worker -u redis://localhost:6379 default
+```
+### 🌐 Access the API
+Open your browser at:
+👉 http://localhost:8000/docs
+
+You can explore all endpoints interactively using Swagger UI.
+
 
